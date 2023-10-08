@@ -1,13 +1,5 @@
-// import ReactDOM from 'react-dom'
 import { App } from './App'
-// import { createRoot } from 'react-dom';
+import ReactDOM from 'react-dom/client'
 
-// const root = createRoot(document.getElementById('root')); // Замените 'root' на ID вашего корневого элемента
-// root.render(<App />);
-
-//  ReactDOM.render(<App />, document.getElementById('root'))
-
-import { createRoot } from 'react-dom/client';
-const container = document.getElementById('root') as HTMLElement;
-const root = createRoot(container);
-root.render(<App />);
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
+root.render(<App />)

@@ -3,10 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.tsx'), // точка входа вашего приложения
-  resolve: { //расширения файлов, которые Webpack будет искать при разрешении модулей
+  resolve: {
+    //расширения файлов, которые Webpack будет искать при разрешении модулей
     extensions: ['.tsx', '.ts', '.js'],
   },
-  module: { //объект определяет, как Webpack должен обрабатывать различные типы файлов
+  module: {
+    //объект определяет, как Webpack должен обрабатывать различные типы файлов
     rules: [
       {
         test: /\.(ts|js)x?$/,
@@ -19,22 +21,28 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
         type: 'asset/resource',
-      }
+      },
     ],
   },
-  output: { //созданные бандлы будут сохранены в каталоге ./build и будут названы bundle.js
+  output: {
+    //созданные бандлы будут сохранены в каталоге ./build и будут названы bundle.js
     path: path.resolve(__dirname, '..', './build'),
     filename: 'bundle.js',
   },
-  plugins: [ // массив содержит список плагинов, которые используются в процессе сборки
+  plugins: [
+    // массив содержит список плагинов, которые используются в процессе сборки
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, '..', './src/index.html'),
-      favicon: path.resolve(__dirname, '..', './src/favicon.ico'),
+      template: path.resolve(__dirname, '..', './public/index.html'),
+      favicon: path.resolve(__dirname, '..', './public/favicon.ico'),
     }),
   ],
 }
