@@ -47,7 +47,7 @@ module.exports = {
     }),
     new ModuleFederationPlugin({
       remotes: {
-      MicroFrontendApp: 'MicroFrontendApp@http://localhost:8081/remoteEntry.js'
+      MicroFrontendApp: 'MicroFrontendApp@https://react-webpack-type-script.vercel.app/remoteEntry.js'
       }
     })
   ],
