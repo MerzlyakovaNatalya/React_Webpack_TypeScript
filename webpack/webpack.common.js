@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { ModuleFederationPlugin } = require('webpack').container;
 
 module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.tsx'), // точка входа вашего приложения
@@ -44,5 +45,10 @@ module.exports = {
       template: path.resolve(__dirname, '..', './public/index.html'),
       favicon: path.resolve(__dirname, '..', './public/favicon.ico'),
     }),
+    new ModuleFederationPlugin({
+      remotes: {
+      MicroFrontendApp: 'MicroFrontendApp@http://localhost:8081/remoteEntry.js'
+      }
+    })
   ],
 }
