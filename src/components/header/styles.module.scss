@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10rem;
+  background-color: rgba(237, 236, 246, 1);
+
+  &_wrap_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_svg {
+    width: 7rem;
+    height: 7rem;
+    margin-right: 10rem;
+  }
+
+  &_link {
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    color: rgba(81, 80, 118, 1);
+    margin-right: 2rem;
+    text-decoration: none;
+  }
+}

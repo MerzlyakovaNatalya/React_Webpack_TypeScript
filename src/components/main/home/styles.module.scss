@@ -1,0 +1,90 @@
+@import '../../../variablesScss/';
+
+.home {
+  width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &_title {
+    width: 100%;
+    font-family: Playfair Display;
+    color: $colorEggplant;
+    font-size: 13rem;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 40rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  &_wrap_subtitle {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+
+    p:nth-child(2) {
+      align-self: flex-end;
+    }
+  }
+
+  &_subtitle {
+    font-family: $fontFamMonts;
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 4.8rem;
+    color: rgba(99, 103, 140, 1);
+    align-self: flex-start;
+  }
+
+  &_text {
+    font-family: $fontFamMonts;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3.1rem;
+    color: $colorGrey;
+  }
+
+  &_wrapper {
+    width: 25%;
+  }
+
+  &_text_span {
+    font-family: $fontFamMonts;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $colorEggplantGrey;
+  }
+
+  &_button {
+    width: 20rem;
+    height: 5rem;
+    background-color: $colorEggplant;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+  }
+
+  &_holder {
+    width: 25%;
+  }
+
+  &_text_desc {
+    font-family: Work Sans;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.9rem;
+    color: $colorGrey;
+    text-align: right;
+    letter-spacing: 0.3em;
+  }
+
+  &_text_desc_last {
+    font-family: $fontFamMonts;
+    font-size: 3.6rem;
+    font-weight: 300;
+    line-height: 39px;
+    color: rgba(117, 122, 165, 1);
+  }
+}
