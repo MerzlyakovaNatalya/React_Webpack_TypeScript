@@ -1,13 +1,13 @@
 import React from 'react'
+import Header from './components/header'
+import Layout from './components/main/layout'
 import './styles.css'
-
-const Users = React.lazy(() => import('MicroFrontendApp/UsersComponent'))
 
 export const App = () => {
   return (
     <>
-      <h1>Сайт в разработке!!!</h1>
-      <Users/>
+      <Header />
+      <Layout/>
     </>
   )
 }

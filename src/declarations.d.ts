@@ -1,2 +1,6 @@
 declare module '*.jpg'
+declare module '*.svg'
+declare module '*.png'
 declare module 'MicroFrontendApp/UsersComponent'
+declare module '*.module.scss'
+declare module '*/helps/*'
