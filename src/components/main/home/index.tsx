@@ -7,20 +7,13 @@ const Home: React.FC = () => {
   return (
     <div className={style.home}>
       <h1 className={style.home_title}>Diamaint</h1>
-      <div className={style.home_wrap_subtitle}>
-        <p className={style.home_subtitle}>
-          Натуральная косметика с привкусом Ирландии
-        </p>
-        <p className={style.home_text}>
-          Ингридиенты контролируются по качеству и происхождению. Большинство из
-          них имеют органический сертификат Ecoсert и Soil Association.
-          Сочетание компонентов в каждой линейке подобрано с учетом особенностей
-          типа кожи.
-        </p>
-      </div>
+      <p className={style.home_subtitle}>
+        Натуральная косметика с привкусом Ирландии
+      </p>
       <div className={style.home_wrapper}>
         <p className={style.home_text}>
-          Diamaint — <span className={style.home_text_span}>одуванчик</span> в переводе с ирландского
+          Diamaint — <span className={style.home_text_span}>одуванчик</span> в
+          переводе с ирландского
         </p>
         <p className={style.home_text}>
           Косметика, после которой вы уже никогда не будете прежней и обретёте
@@ -41,9 +34,23 @@ const Home: React.FC = () => {
         </p>
       </div>
       <div className={style.home_holder}>
-        <p className={style.home_text_desc}>*<br/>Подбираем<br/> комплекс<br/> специально<br/> для вашего<br/> типа кожи</p>
-        <p className={style.home_text_desc_last}>Diamaint — только натуральные ингридиенты</p>
+        <p className={style.home_text_desc}>
+          *<br />
+          Подбираем
+          <br /> комплекс
+          <br /> специально
+          <br /> для вашего
+          <br /> типа кожи
+        </p>
+        <p className={style.home_text_desc_last}>
+          Diamaint — только натуральные ингридиенты
+        </p>
       </div>
+      <p className={`${style.home_text} ${style.home_modifier_text}`}>
+        Ингридиенты контролируются по качеству и происхождению.<br/> Большинство из
+        них имеют органический сертификат<br/> Ecoсert и Soil Association. Сочетание
+        компонентов в каждой<br/> линейке подобрано с учетом особенностей типа кожи.
+      </p>
       <img src={branch} alt="branch" className={style.home_img_branch} />
       <img
         src={dandelion}

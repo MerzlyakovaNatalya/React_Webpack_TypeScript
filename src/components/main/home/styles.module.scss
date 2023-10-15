@@ -1,11 +1,12 @@
 @import '../../../variablesScss/';
 
 .home {
-  width: 144rem;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
 
   &_title {
     width: 100%;
@@ -13,34 +14,32 @@
     color: $colorEggplant;
     font-size: 13rem;
     font-weight: 400;
-    text-align: center;
-    margin-right: 40rem;
-    margin-top: 2rem;
-    margin-bottom: 0;
-  }
+    margin: 0;
+    line-height: 213px;
+    text-align: left;
 
-  &_wrap_subtitle {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-
-    p:nth-child(2) {
-      align-self: flex-end;
+    @media (max-width: 850px) {
+      line-height: 60px;
     }
   }
 
+  &_modifier_text {
+    width: 100%;
+    align-self: flex-end;
+  }
+
   &_subtitle {
+    width: 14%;
     font-family: $fontFamMonts;
-    font-size: 3.6rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    line-height: 4.8rem;
+    line-height: 4.2rem;
     color: rgba(99, 103, 140, 1);
-    align-self: flex-start;
   }
 
   &_text {
     font-family: $fontFamMonts;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: 400;
     line-height: 3.1rem;
     color: $colorGrey;
@@ -48,6 +47,23 @@
 
   &_wrapper {
     width: 25%;
+    margin-left: 10rem;
+
+    & p:first-child {
+      margin-bottom: 30px;
+    }
+
+    & p:nth-child(2) {
+      margin-bottom: 10px;
+    }
+
+    & p:nth-child(3) {
+      margin-bottom: 20px;
+    }
+
+    & button:nth-child(4) {
+      margin-bottom: 20px;
+    }
   }
 
   &_text_span {
@@ -59,7 +75,8 @@
 
   &_button {
     width: 20rem;
-    height: 5rem;
+    height: 4rem;
+    font-size: 1.6rem;
     background-color: $colorEggplant;
     color: white;
     border: 0;
@@ -68,6 +85,11 @@
 
   &_holder {
     width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: end;
+    position: relative;
   }
 
   &_text_desc {
@@ -78,13 +100,44 @@
     color: $colorGrey;
     text-align: right;
     letter-spacing: 0.3em;
+    margin-bottom: 10rem;
   }
 
   &_text_desc_last {
+    position: absolute;
+    bottom: -14rem;
     font-family: $fontFamMonts;
-    font-size: 3.6rem;
+    font-size: 3.3rem;
     font-weight: 300;
-    line-height: 39px;
+    line-height: 3.9rem;
     color: rgba(117, 122, 165, 1);
+    margin-bottom: 0;
+    padding-left: 20rem;
+  }
+
+  &_img_branch {
+    width: 60rem;
+    position: absolute;
+    top: 27rem;
+    left: -19rem;
+
+    @media (max-width: 1440px) {
+      top: 35rem;
+    }
+
+    @media (max-width: 1024px) {
+      top: 48rem;
+    }
+
+    @media (max-width: 850px) {
+      top: 18rem;
+    }
+  }
+
+  &_img_dandelion {
+    width: 140rem;
+    position: absolute;
+    top: -10rem;
+    right: -13rem;
   }
 }

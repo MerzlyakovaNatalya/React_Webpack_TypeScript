@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Basket: React.FC = () => {
+interface BasketValue {
+  width: string
+}
+
+const Basket: React.FC<BasketValue> = (props: BasketValue) => {
   return (
     <svg
-      width="66"
+      width={props.width}
       height="60"
       viewBox="0 0 66 60"
       fill="none"
@@ -26,7 +30,14 @@ const Basket: React.FC = () => {
       />
       <circle cx="34.1537" cy="27.6154" r="1.69231" fill="#373737" />
       <circle cx="25.8461" cy="27.6154" r="1.69231" fill="#373737" />
-      <text x="52.5" y="13.5" fill="white" style={{ fontWeight: 'bold', fontSize: 12 }}>2</text>
+      <text
+        x="52.5"
+        y="13.5"
+        fill="white"
+        style={{ fontWeight: 'bold', fontSize: 12 }}
+      >
+        2
+      </text>
     </svg>
   )
 }
