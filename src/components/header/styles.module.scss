@@ -15,6 +15,10 @@
     width: 7rem;
     height: 7rem;
     margin-right: 10rem;
+
+    @media (max-width: 1440px) {
+      width: 4rem;
+    }
   }
 
   &_link {
