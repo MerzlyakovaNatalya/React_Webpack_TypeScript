@@ -7,6 +7,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
+  z-index: 1;
 
   &_title {
     width: 100%;
@@ -48,6 +49,7 @@
   &_wrapper {
     width: 25%;
     margin-left: 10rem;
+    z-index: 3;
 
     & p:first-child {
       margin-bottom: 30px;
@@ -74,13 +76,13 @@
   }
 
   &_button {
-    width: 20rem;
+    width: 17rem;
     height: 4rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     background-color: $colorEggplant;
     color: white;
     border: 0;
-    border-radius: 30px;
+    border-radius: 10px;
   }
 
   &_holder {
@@ -139,5 +141,6 @@
     position: absolute;
     top: -10rem;
     right: -13rem;
+    z-index: 2;
   }
 }

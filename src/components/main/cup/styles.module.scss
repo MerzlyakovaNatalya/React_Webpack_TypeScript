@@ -12,14 +12,13 @@
     width: 80%;
     position: absolute;
     top: -30rem;
-    position: relative;
   }
 
   &_wrap::after {
     content: '';
     position: absolute;
     height: 0;
-    top: 50%;
+    top: 55rem;
     width: 100rem;
     height: 16rem;
     background-color: white;

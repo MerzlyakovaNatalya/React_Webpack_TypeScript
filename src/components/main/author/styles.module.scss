@@ -1,0 +1,67 @@
+@import '../../../variablesScss/';
+
+.author {
+  width: 80%;
+  height: 75rem;
+  margin: 0 auto;
+  background-image: url('../../../assets/images/authors.png');
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position: 100% 100%;
+
+  &_inner {
+    width: 40%;
+    height: 100%;
+    background-image: url('../../../assets/images/author_product.png');
+    background-repeat: no-repeat;
+    width: 50%;
+    background-position: -18rem 100%;
+}
+
+  &_title {
+    width: 60%;
+    font-family: $fontFamMonts;
+    font-size: 6rem;
+    font-weight: 200;
+    line-height: 7.7rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(117, 122, 165, 1);
+    margin: 0;
+  }
+
+  &_text_name {
+    font-family: $fontFamMonts;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 4rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(81, 80, 118, 1);
+  }
+
+  &_text {
+    width: 60%;
+    font-family: $fontFamMonts;
+    font-size: 1.6rem0;
+    line-height: 2.9rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(136, 135, 148, 1);
+  }
+
+  &_citation {
+    font-family: $fontFamMonts;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.9rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(136, 135, 148, 1);
+
+    &::before{
+        content: url('../../../assets/images/quotes.png');
+        margin-right: 3rem;
+    }
+  }
+}
