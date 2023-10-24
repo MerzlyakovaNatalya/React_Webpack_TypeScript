@@ -5,6 +5,7 @@
     // url('../../assets/images/footer_shadow.png') 0 -30rem no-repeat,
     url('../../../src/assets/images/footer_img.png') 100% 100% no-repeat;
   position: relative;
+  background-size: 192rem;
   z-index: 1;
 
   &::after {
