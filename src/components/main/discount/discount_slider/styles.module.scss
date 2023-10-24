@@ -1,0 +1,89 @@
+@import '../../../../variablesScss/';
+
+.discount_slider {
+  padding-top: 3rem;
+  width: 60rem;
+  position: relative;
+  z-index: 1;
+
+  &_lower {
+    box-sizing: border-box;
+    width: 60rem;
+    height: 40rem;
+    left: -2.5rem;
+    top: 5.5rem;
+    background-color: rgba(81, 80, 118, 1);
+    position: absolute;
+    z-index: 2;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: $fontFamMonts;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.17em;
+    padding-top: 2.5rem;
+  }
+
+  &_upper {
+    position: absolute;
+    width: 60rem;
+    height: 40rem;
+    background-color: rgba(247, 247, 250, 1);
+    z-index: 3;
+  }
+
+  &_wrapper {
+    width: 94%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-left: 4rem;
+    padding-top: 3rem;
+  }
+
+  &_ellipse {
+    width: 7rem;
+    height: 7rem;
+    background-image: url('../../../../assets/images/llipse.png');
+    background-repeat: no-repeat;
+    background-size: 7rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(81, 80, 118, 1);
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
+  &_text {
+    width: 40%;
+    font-family: $fontFamMonts;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3.3rem;
+    letter-spacing: 0em;
+    color: rgba(76, 80, 114, 1);
+    margin-top: 0;
+  }
+
+  &_desc {
+    width: 50%;
+    font-family: $fontFamMonts;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 0em;
+    color: rgba(136, 135, 148, 1);
+  }
+
+  &_img {
+    position: absolute;
+    right: 0.6rem;
+    width: 20rem;
+  }
+}

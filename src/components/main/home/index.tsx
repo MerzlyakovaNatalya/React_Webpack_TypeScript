@@ -1,11 +1,12 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import branch from '../../../assets/images/branch.png'
 import dandelion from '../../../assets/images/dandelion.png'
 import style from './styles.module.scss'
 
 const Home: React.FC = () => {
   return (
-    <div className={style.home}>
+    <div className={style.home} id='home'>
       <h1 className={style.home_title}>Diamaint</h1>
       <p className={style.home_subtitle}>
         Натуральная косметика с привкусом Ирландии
@@ -25,9 +26,13 @@ const Home: React.FC = () => {
           вкупе традиционными ирландскими рецептами для того, чтобы придать
           вашей коже здоровый и цветущий вид
         </p>
-        <button type="button" className={style.home_button}>
+        <motion.button
+          whileHover={{ scale: 1.2 }}
+          type="button"
+          className={style.home_button}
+        >
           Выбрать продукт
-        </button>
+        </motion.button>
         <p className={style.home_text}>
           В основе — активные натуральные комплексы, витамины С, А, РР, В И Е,
           масла, воски, минералы и натуральные солнцезащитные компоненты.
@@ -47,9 +52,10 @@ const Home: React.FC = () => {
         </p>
       </div>
       <p className={`${style.home_text} ${style.home_modifier_text}`}>
-        Ингридиенты контролируются по качеству и происхождению.<br/> Большинство из
-        них имеют органический сертификат<br/> Ecoсert и Soil Association. Сочетание
-        компонентов в каждой<br/> линейке подобрано с учетом особенностей типа кожи.
+        Ингридиенты контролируются по качеству и происхождению.
+        <br /> Большинство из них имеют органический сертификат
+        <br /> Ecoсert и Soil Association. Сочетание компонентов в каждой
+        <br /> линейке подобрано с учетом особенностей типа кожи.
       </p>
       <img src={branch} alt="branch" className={style.home_img_branch} />
       <img

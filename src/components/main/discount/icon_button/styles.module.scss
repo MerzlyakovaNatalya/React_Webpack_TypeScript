@@ -1,0 +1,34 @@
+.icon_button {
+  width: 4.5rem;
+  height: 4.5rem;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+.icon_button.left {
+     background-image: url('../../../../assets/icons/prev_button.svg');
+     background-repeat: no-repeat;
+     background-size: 4.5rem;
+     z-index: 3;
+   }
+
+.icon_button.right {
+  background-image: url('../../../../assets/icons/next_button.svg');
+  background-repeat: no-repeat;
+  background-size: 4.5rem;
+  z-index: 3;
+}
+
+.icon_button.right.disable {
+  background-image: url('../../../../assets/icons/disable_next_button.svg');
+  background-repeat: no-repeat;
+  background-size:4.5rem;
+  z-index: 3;
+}
+
+.icon_button.left.disable {
+  background-image: url('../../../../assets/icons/disable_prev_button.svg');
+  background-repeat: no-repeat;
+  background-size: 4.5rem;
+  z-index: 3;
+}

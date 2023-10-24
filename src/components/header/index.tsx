@@ -20,8 +20,8 @@ const Header: React.FC = () => {
       <div className={style.header_wrap_menu}>
         <img src={logo} alt="logo" className={style.header_svg} />
         {menu.map((item, index) => (
-          <a href="#" className={style.header_link} key={index}>
-            {item}
+          <a href={item.id} className={style.header_link} key={index}>
+            {item.title}
           </a>
         ))}
       </div>
