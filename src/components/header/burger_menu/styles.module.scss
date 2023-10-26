@@ -1,0 +1,21 @@
+.burger_menu_nav {
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 3;
+
+  @media (min-width: 400px) {
+    display: none;
+  }
+}
+
+.burger_menu_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #fff;
+}

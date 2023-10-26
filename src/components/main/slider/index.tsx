@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from './styles.module.scss'
 
-const Users = React.lazy(() => import('MicroFrontendApp/UsersComponent'))
+const Slider = React.lazy(() => import('MicroFrontendSlider/SliderComponent'))
 
-const Slider: React.FC = () => {
-  return <div className={style.slider}>
-    <Users/>
-  </div>
+const SliderMicroFrontend: React.FC = () => {
+  return (
+    <div className={style.slider_micro_frontend}>
+      <Slider />
+    </div>
+  )
+  return <div />
 }
 
-export default Slider
+export default SliderMicroFrontend

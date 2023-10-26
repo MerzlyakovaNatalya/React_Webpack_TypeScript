@@ -1,6 +1,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { ModuleFederationPlugin } = require('webpack').container;
+const { ModuleFederationPlugin } = require('webpack').container
+
+const deps = require('../package.json').dependencies
 
 module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.tsx'), // точка входа вашего приложения
@@ -46,9 +48,12 @@ module.exports = {
       favicon: path.resolve(__dirname, '..', './public/favicon.ico'),
     }),
     new ModuleFederationPlugin({
+      name: 'host',
       remotes: {
-      MicroFrontendApp: 'MicroFrontendApp@https://micro-frontend-slider.vercel.app/remoteEntry.js'
-      }
-    })
+        MicroFrontendSlider:
+          'MicroFrontendSlider@https://micro-frontend-slider.vercel.app/remoteEntry.js',
+      },
+      shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
+    }),
   ],
 }

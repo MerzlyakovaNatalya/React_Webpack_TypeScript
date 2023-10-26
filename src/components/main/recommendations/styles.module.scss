@@ -8,6 +8,11 @@
   background-repeat: no-repeat;
   background-position: 0 95rem;
   background-size: 144rem;
+
+  @media (max-width: 400px) {
+    padding-top: 0;
+    height: 75rem;
+  }
 }
 
 .recommendations {
@@ -20,6 +25,10 @@
   margin-bottom: 30rem;
   padding-top: 6rem;
 
+  @media (max-width: 400px) {
+    height: 63rem;
+  }
+
   &_title {
     font-family: Playfair Display;
     font-size: 20rem;
@@ -31,6 +40,13 @@
     top: -30rem;
     left: 27%;
     text-align: center;
+
+    @media (max-width: 400px) {
+      font-size: 5rem;
+      font-weight: 200;
+      left: 19%;
+      top: -19rem;
+    }
   }
 
   &_img_purple_dandelion {
@@ -39,6 +55,10 @@
     top: 5rem;
     right: 0;
     z-index: 2;
+
+    @media (max-width: 400px) {
+      right: 8px;
+    }
   }
 
   &_content {
@@ -52,11 +72,28 @@
     display: flex;
     justify-content: flex-end;
     padding-top: 5rem;
+
+    @media (max-width: 850px) {
+      width: 100%;
+      justify-content: center;
+      background-position: -3rem -0.5rem;
+    }
   }
 
   &_inner {
     width: 30%;
     z-index: 3;
+
+    @media (max-width: 850px) {
+      width: 95%;
+      margin-top: 12rem;
+    }
+
+    @media (min-width: 400px) and (max-width: 850px) {
+      width: 30%;
+      position: absolute;
+      right: 10rem;
+  }
   }
 
   &_subtitle {
@@ -68,6 +105,10 @@
     text-align: left;
     color: rgba(165, 163, 185, 1);
     margin-bottom: 3rem;
+
+    @media (max-width: 400px) {
+      margin-bottom: 1rem;
+    }
   }
 
   &_number {
@@ -83,6 +124,10 @@
       font-size: 4rem;
       font-weight: 200;
     }
+
+    @media (max-width: 400px) {
+      font-size: 3rem;
+    }
   }
 
   &_woman {
@@ -94,6 +139,11 @@
     text-align: left;
     color: rgba(81, 80, 118, 1);
     margin: 0;
+
+    @media (max-width: 400px) {
+      font-size: 3rem;
+      line-height: 4.7rem;
+    }
   }
 
   &_text {
@@ -104,5 +154,9 @@
     letter-spacing: 0em;
     text-align: left;
     color: rgba(136, 135, 148, 1);
+
+    @media (max-width: 400px) {
+      font-size: 1.3rem;
+    }
   }
 }

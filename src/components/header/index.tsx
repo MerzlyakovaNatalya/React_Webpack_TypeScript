@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react'
 import logo from '../../assets/icons/logo.svg'
 import Basket from '../../assets/icons/basket'
+import BurgerMenu from './burger_menu'
 import { menu } from '../../helps'
 import style from './styles.module.scss'
 
@@ -26,6 +27,7 @@ const Header: React.FC = () => {
         ))}
       </div>
       <Basket width={widthDiv} />
+      <BurgerMenu/>
     </div>
   )
 }

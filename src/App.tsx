@@ -8,8 +8,8 @@ export const App = () => {
   return (
     <>
       <Header />
-      <Layout/>
-      <Footer/>
+      <Layout />
+      <Footer />
     </>
   )
 }

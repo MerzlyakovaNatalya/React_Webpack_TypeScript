@@ -1,7 +1,7 @@
 @import '../../../../variablesScss';
 
 .description {
-    width: 36rem;
+  width: 36rem;
   &_title {
     font-family: $fontFamMonts;
     font-size: 4rem;
@@ -10,6 +10,12 @@
     color: rgba(117, 122, 165, 1);
     margin-bottom: 0;
     margin-top: 0;
+
+    @media (max-width: 400px) {
+      font-size: 3rem;
+      font-weight: 200;
+      line-height: 3.7rem;
+    }
   }
 
   &_text {
@@ -19,5 +25,10 @@
     line-height: 3.4rem;
     color: rgba(136, 135, 148, 1);
     margin-bottom: 4rem;
+
+    @media (max-width: 400px) {
+     width: 95%;
+     margin-bottom: 2rem;
+    }
   }
 }

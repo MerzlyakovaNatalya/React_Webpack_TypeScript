@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from '../home'
-import Slider from '../slider'
+import SliderMicroFrontend from '../slider'
 import Discount from '../discount'
 import Recommendations from '../recommendations'
 import Author from '../author'
@@ -11,7 +11,7 @@ const Layout: React.FC = () => {
   return <>
   <Home/>
   <Cup/>
-  <Slider/>
+  <SliderMicroFrontend/>
   <Discount/>
   <Recommendations/>
   <Author/>
