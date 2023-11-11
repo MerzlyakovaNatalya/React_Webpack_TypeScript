@@ -49,6 +49,10 @@ module.exports = {
     }),
     new ModuleFederationPlugin({
       name: 'host',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './react': './src/App', // Экспортируемые модули
+      },
       remotes: {
         MicroFrontendSlider:
           'MicroFrontendSlider@https://micro-frontend-slider.vercel.app/remoteEntry.js',
