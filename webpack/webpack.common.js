@@ -57,7 +57,7 @@ module.exports = {
         MicroFrontendSlider:
           'MicroFrontendSlider@https://micro-frontend-slider.vercel.app/remoteEntry.js',
       },
-      shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
+      // shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),
   ],
 }
